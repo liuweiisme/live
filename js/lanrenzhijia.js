@@ -13,7 +13,7 @@ function systole(){
 		eleTop = [];
 	
 	parentH = $warpEle.parent().height();
-	$warpEle.parent().css({"height":59});
+	//$warpEle.parent().css({"height":59});
 	
 	setTimeout(function(){
 		
@@ -22,7 +22,7 @@ function systole(){
 			$(this).css({"margin-top":-eleTop[idx]}).children().hide();
 		}).animate({"margin-top":0}, 600).children().fadeIn();
 
-		$warpEle.parent().animate({"height":5450}, 2600);
+		//$warpEle.parent().animate({"height":5450}, 2600);
 
 		$warpEle.find("ul").children(":not('h2:first')").addClass("bounceInDown").css({"-webkit-animation-duration":"2s","-webkit-animation-delay":"0","-webkit-animation-timing-function":"ease","-webkit-animation-fill-mode":"both"}).end().children("h2").css({"position":"relative"});
 		
